@@ -1,0 +1,10 @@
+name = "cloud-services-monitor"
+main = "src/index.js"
+compatibility_date = "2026-05-22"
+
+kv_namespaces = [
+  { binding = "PORTAL_KV", id = "966b38a72b1243a19c0023b6dbe383cd" }
+]
+
+[triggers]
+crons = ["*/10 * * * *"]

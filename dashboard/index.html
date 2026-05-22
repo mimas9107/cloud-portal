@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雲端服務狀態與 Keep-Alive 監控儀表板</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>雲端服務整合儀表板</h1>
+      <div class="status-meta">
+        <span id="status-meta">正在獲取狀態...</span>
+        <button class="btn-refresh" onclick="triggerProbe()" id="btn-refresh">立即檢測</button>
+      </div>
+    </header>
+
+    <div id="loader" class="loading-text">連線至 Cloudflare Edge...</div>
+
+    <div id="dashboard-sections">
+      <div class="section-title">Render.com 服務群</div>
+      <div class="dashboard-grid" id="grid-render"></div>
+
+      <div class="section-title">Vercel 平台</div>
+      <div class="dashboard-grid" id="grid-vercel"></div>
+
+      <div class="section-title">Cloudflare 平台</div>
+      <div class="dashboard-grid" id="grid-cloudflare"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

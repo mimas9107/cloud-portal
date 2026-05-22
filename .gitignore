@@ -1,0 +1,49 @@
+# Dependency directories
+node_modules/
+
+# Cloudflare Wrangler
+.wrangler/
+.dev.vars
+
+# Environment files and secrets (Security Risks)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Key/Cert files (Security Risks)
+*.pem
+*.key
+*.pub
+*.p12
+*.pfx
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Temporary and backup files
+*.bak
+*.tmp
+*.temp
+*.old
+*.orig
+*~
