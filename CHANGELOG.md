@@ -2,7 +2,7 @@
 name:          "CHANGELOG.md"
 description:   "專案版本變更紀錄"
 created_date:  "2026/05/22 10:00:00"
-modified_date: "2026/05/22 15:00:00"
+modified_date: "2026/05/22 16:00:00"
 project_version: "0.2.0"
 document_version: "1.1.0"
 agent_sign: ['human/name','opencode/deepseek-v4-flash-free']
@@ -22,6 +22,8 @@ agent_sign: ['human/name','opencode/deepseek-v4-flash-free']
 - wrangler.toml 更新為實際 KV namespace ID
 - dashboard/app.js 設定實際 Worker URL
 - src/config.js 更新為實際服務 URL
+- package.json publish:dashboard 補上 project-name 參數
+- README.md 重新整理結構
 
 ## [0.1.0] — 2026-05-22
 ### 新增
